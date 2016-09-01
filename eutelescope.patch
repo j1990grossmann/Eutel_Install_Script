@@ -26,6 +26,7 @@
 >         os.system ("patch ../cmake/FindG4.cmake -i " + os.getenv("PWD") + "/examples/eutelescope/FindG4.patch")
 >         os.system ("patch ../cmake/FindXERCESC.cmake -i " + os.getenv("PWD") + "/examples/eutelescope/FindXERCESC.patch")
 >         os.system ("patch ../CMakeLists.txt -i " + os.getenv("PWD") + "/examples/eutelescope/CMakeLists.patch")
+>         os.system ("patch ../tools/install-externals/install-externals.sh  -i " + os.getenv("PWD") + "/examples/eutelescope/externals.patch")
 >             
 66a83,84
 >             

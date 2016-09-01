@@ -2,3 +2,12 @@
 < wget --no-check-certificate -P "$tempdir" 'http://argparse.googlecode.com/files/'$argparsefile
 ---
 > wget --no-check-certificate -P "$tempdir" 'https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/argparse/'$argparsefile
+41,48d40
+< # Eigen -- linear algebra package
+< eigenversion="3.2.2"
+< wget --no-check-certificate --output-document="$tempdir/${eigenversion}.tar.gz" 'http://bitbucket.org/eigen/eigen/get/'${eigenversion}.tar.gz
+< if [ ! -d "$extpath/Eigen" ]; then mkdir "$extpath/Eigen"; fi;
+< echo "Extracting tar archive..."
+< tar --strip-components 1 -C "$extpath/Eigen" -xzf "$tempdir/${eigenversion}.tar.gz" 
+< echo "... done with Eigen library"
+< 
