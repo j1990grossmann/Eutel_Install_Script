@@ -1,0 +1,5 @@
+256c256,257
+<        
+---
+>         if "USE_CXX11" in self.envcmake:
+>             f.write("SET( CMAKE_CXX_STANDARD 11  CACHE INTERNAL \"Force c++11\" FORCE)" + os.linesep ) 

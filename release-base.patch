@@ -1,0 +1,4 @@
+68c68
+< ilcsoft.envcmake['USE_CXX11']=use_cpp11
+---
+> ilcsoft.envcmake['USE_CXX11']="ON"

@@ -1,0 +1,14 @@
+40,52d39
+< # If we didn't find it there, fall back to some standard search paths
+< find_path(
+<     XERCESC_INCLUDE_DIR
+<     NAMES xercesc/util/XercesVersion.hpp
+< )
+< 
+< EXECUTE_PROCESS(
+<     COMMAND find ${XercesC_HOME}/include/xercesc/ -type d # -printf "%p;" # not recognized on mac osx
+<     OUTPUT_VARIABLE XERCESC_INCLUDE_DIR
+<     RESULT_VARIABLE _exit_code
+< )
+< 
+< 

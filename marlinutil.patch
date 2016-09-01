@@ -1,0 +1,4 @@
+22c22
+<         self.reqmodules = [ "Marlin", "GSL", "CLHEP", "GEAR", "LCIO" , "CED" , "ROOT" ]
+---
+>         self.reqmodules = [ "Marlin", "GSL", "CLHEP", "GEAR", "LCIO" , "CED" , "ROOT", "DD4hep" ]
