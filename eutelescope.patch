@@ -3,18 +3,18 @@
 < 
 ---
 >         self.Branch = {}
->         self.Branch.setdefault( 'AlexBranch',0) 
+>         self.Branch.setdefault( 'JGrossmannBranch',0) 
 35a36,37
 >  
 > 
 37a40,48
 > 
 > 
->         if self.Branch["AlexBranch"]: 
+>         if self.Branch["JGrossmannBranch"]: 
 >             os.system("git init")
->             os.system("git remote add Alex https://github.com/AlexanderMorton/eutelescope.git")
->             os.system("git fetch Alex")
->             os.system("git checkout -b AlexBranch Alex/addShiftToHitMaker")
+>             os.system("git remote add jgrossmann https://github.com/j1990grossmann/eutelescope")
+>             os.system("git fetch jgrossmann")
+>             os.system("git checkout -b JGrossmannBranch jgrossmann/v1.0-tag")
 > 
 > 
 40a52
