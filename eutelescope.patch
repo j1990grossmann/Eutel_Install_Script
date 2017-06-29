@@ -3,7 +3,7 @@
 < 
 ---
 >         self.Branch = {}
->         self.Branch.setdefault( 'JGrossmannBranch',0) 
+>         self.Branch.setdefault( 'JGrossmannBranch',1) 
 35a36,37
 >  
 > 
@@ -14,7 +14,7 @@
 >             os.system("git init")
 >             os.system("git remote add jgrossmann https://github.com/j1990grossmann/eutelescope")
 >             os.system("git fetch jgrossmann")
->             os.system("git checkout -b JGrossmannBranch jgrossmann/v1.0-tag")
+>             os.system("git checkout -b JGrossmannBranch jgrossmann/master")
 > 
 > 
 40a52
